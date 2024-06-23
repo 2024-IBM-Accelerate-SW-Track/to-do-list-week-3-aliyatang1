@@ -32,7 +32,7 @@ class AddTodo extends Component {
   */
   handleChangedDue = (event) => {
     this.setState({
-      due: date.toLocaleDateString()
+      due: new Date(event).toLocaleDateString()
     });
   }
   // The handleSubmit function collects the forms input and puts it into the react state.

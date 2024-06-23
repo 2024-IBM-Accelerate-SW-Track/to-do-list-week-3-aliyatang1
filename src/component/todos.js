@@ -26,7 +26,7 @@ const Todos = ({ todos, deleteTodo }) => {
             current date/time {todo.date}. Also, the item's id is utilized in order to correctly delete an item from the Todo list*/}.
             <ListItemButton component="a" href="#simple-list">
               <Checkbox style={{paddingLeft:0}} color="primary" onClick={() => deleteTodo(todo.id)}/>
-              <ListItemText primary={todo.content} secondary={'Due Date: ${todo.due}'}/>
+              <ListItemText primary={todo.content} secondary={'Due Date: '+dueDate}/>
             </ListItemButton>
           </Card>
         </Grid>
